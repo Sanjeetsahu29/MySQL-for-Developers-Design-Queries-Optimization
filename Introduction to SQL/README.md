@@ -49,3 +49,58 @@ There are certain rules for SQL which would ensure consistency and functionality
 We Start with a letter
 We can only use Max 30 characters
 We only use letters, numbers and underscores (_)
+
+## Different SQL Commands or Queries
+Structured Query Language (SQL) commands are standardized instructions used by developers to interact with data stored in relational databases. These commands allow for the creation, manipulation, retrieval and control of data, as well as database structures. SQL commands are categorized based on their specific functionalities:
+<img width="800" height="400" alt="image" src="https://github.com/user-attachments/assets/c8df841c-3b19-4063-b20f-590e97e5c99c" />
+
+### 1. Data Definition Language
+DDL (Data Definition Language) commands are used to create, change, and delete database objects.Database engineers use commands like CREATE to make tables, views, and indexes, and ALTER or DROP to modify or remove them.
+| Command   | Description                                                                 |
+|-----------|-----------------------------------------------------------------------------|
+| CREATE    | Creates a new table, a view on a table, or some other object in the database. |
+| ALTER     | Modifies an existing database object, such as a table.                      |
+| DROP      | Deletes an entire table, a view of a table, or other objects in the database. |
+| TRUNCATE  | Removes all records from a table but keeps the table structure intact.      |
+| RENAME    | It is used to change the name of an existing database object, such as a table. |
+
+### 2. Data Manipulation Language 
+A relational database can be updated with new data using data manipulation language (DML) statements. The INSERT command, for instance, is used by an application to add a new record to the database.
+| Command | Description        |
+|---------|--------------------|
+| INSERT  | Creates a record.  |
+| UPDATE  | Modifies records.  |
+| DELETE  | Deletes records.   |
+
+### 3. Data Query Language
+Data retrieval instructions are written in the data query language (DQL), which is used to access relational databases. The SELECT command is used by software programs to filter and return particular results from a SQL table. 
+
+### 4. Data Control language
+DCL commands manage user access to the database by granting or revoking permissions. Database administrators use DCL to enforce security and control access to database objects.
+| Command | Description                              |
+|---------|------------------------------------------|
+| GRANT   | Gives a privilege to the user.           |
+| REVOKE  | Takes back privileges granted by the user. |
+
+### 5. Transaction Control Language
+TCL commands manage transactions in relational databases, ensuring data integrity and consistency. These commands are used to commit changes or roll back operations in case of errors.
+
+| Command   | Description |
+|-----------|-------------|
+| COMMIT    | Saves all changes made during the current transaction on a permanent basis. Some databases provide an auto-commit feature, which can be configured using settings. |
+| ROLLBACK  | Reverts changes made during the current transaction, ensuring no unwanted changes are saved. |
+| SAVEPOINT | Sets a point within a transaction to which changes can be rolled back, allowing partial rollbacks. |
+
+### Benefits of SQL
+Efficient: Works fast even with large and complex data.
+Standard: Works on most database systems.
+Scalable: Can handle small to very large databases.
+Flexible: Supports advanced logic using extensions like PL/SQL or T-SQL.
+
+### Limitations of SQL
+Complex: Advanced tuning and optimization can be difficult.
+Scalability Issues: Not ideal for huge or unstructured data.
+Different Versions: Some SQL features vary by database.
+Not Real-Time: Traditional SQL is not built for real-time analytics.
+
+
