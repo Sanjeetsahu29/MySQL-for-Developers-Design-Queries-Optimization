@@ -126,3 +126,23 @@ CREATE TABLE User_Status (
 );
 ```
 
+## 6. Special Data Types
+SQL also supports some specialized data types for advanced use cases:
+
+- XML Data Type: Used to store XML data and manipulate XML structures in the database
+  **Example:**
+  ```json
+    CREATE TABLE XML_Records (
+        RecordID INT PRIMARY KEY,
+        ConfigData XML
+    );
+    ```
+- Spatial Data Type (Geometry): stores planar spatial data, such as points, lines, and polygons, in a database table.
+  
+  **Example:**
+  ```json
+  CREATE TABLE Locations (
+    LocationID INT PRIMARY KEY,
+    Area GEOMETRY
+    );
+    ```
