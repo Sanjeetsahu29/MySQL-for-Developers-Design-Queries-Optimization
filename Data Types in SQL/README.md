@@ -94,3 +94,35 @@ CREATE TABLE Orders (
 );
 ```
 
+## 4. Binary Data Types in SQL
+Binary data types are used to store binary data such as images, videos or other file types. These include
+
+| Data Type  | Description                         | Max Length            |
+|------------|-------------------------------------|------------------------|
+| BINARY     | Fixed-length binary data            | 8000 bytes             |
+| VARBINARY  | Variable-length binary data         | 8000 bytes             |
+| IMAGE      | Stores binary data (e.g., images)   | 2,147,483,647 bytes    |
+
+**Example:**
+```json
+CREATE TABLE Product_Images (
+    ImageID INT PRIMARY KEY,
+    ImageName VARCHAR(100),
+    ImageData VARBINARY(MAX)
+);
+```
+## 5. Boolean Data Type in SQL
+he BOOLEAN data types are used to store logical values, typically TRUE or FALSE. It is commonly used for flag fields or binary conditions.In SQLite, there is no separate BOOLEAN or BIT data type. Instead, boolean values are stored using INTEGER, where:
+
+- 1 represents TRUE
+- 0 represents FALSE
+
+**Example:**
+```json
+CREATE TABLE User_Status (
+    UserID INT PRIMARY KEY,
+    IsActive INTEGER,
+    IsVerified INTEGER
+);
+```
+
