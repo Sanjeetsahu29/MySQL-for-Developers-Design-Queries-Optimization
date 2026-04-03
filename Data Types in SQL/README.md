@@ -41,3 +41,38 @@ CREATE TABLE Measurements (
     Humidity REAL
 );
 ```
+## 2. Character and String Data Types
+Character data types are used to store text or character-based data. The choice between fixed-length and variable-length data types depends on the nature of your data.
+| Data Type     | Description |
+|---------------|-------------|
+| CHAR          | Fixed-length non-Unicode characters. Maximum length: 8000 characters. |
+| VARCHAR       | Variable-length non-Unicode characters. Maximum length: 8000 characters. |
+| VARCHAR(MAX)  | Variable-length non-Unicode data. Maximum length: 2^31 - 1 characters (SQL Server 2005+). |
+| TEXT          | Variable-length non-Unicode data. Maximum length: 2,147,483,647 characters. |
+
+**Example**
+```json
+CREATE TABLE Employee_Info (
+    EmpID INT PRIMARY KEY,
+    FirstName VARCHAR(50),
+    LastName CHAR(30),
+    Bio TEXT
+);
+```
+
+### Unicode Character String Data Types
+Unicode data types are used to store characters from any language, supporting a wider variety of characters. These are given in below table.
+| Data Type      | Description |
+|----------------|-------------|
+| NCHAR          | Fixed-length Unicode characters. Maximum length: 4000 characters. |
+| NVARCHAR       | Variable-length Unicode characters. Maximum length: 4000 characters. |
+| NVARCHAR(MAX)  | Variable-length Unicode data. Maximum length: 2^31 - 1 characters (SQL Server 2005+). |
+
+**Example**:
+```json
+CREATE TABLE International_Users (
+    UserID INT PRIMARY KEY,
+    FullName NVARCHAR(100),
+    Country NCHAR(50)
+);
+```
