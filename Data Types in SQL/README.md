@@ -76,3 +76,21 @@ CREATE TABLE International_Users (
     Country NCHAR(50)
 );
 ```
+## 3. Date and Time Data Type
+SQL provides several data types for storing date and time information. They are essential for managing timestamps, events and time-based queries. These are given in the below table.
+| Data Type | Description                                              | Storage Size |
+|-----------|----------------------------------------------------------|--------------|
+| DATE      | Stores date values (year, month, day)                    | 3 Bytes      |
+| TIME      | Stores time values (hour, minute, second)                | 3 Bytes      |
+| DATETIME  | Stores both date and time (year, month, day, hour, minute, second) | 8 Bytes      |
+
+**Example:**
+```json
+CREATE TABLE Orders (
+    OrderID INT PRIMARY KEY,
+    OrderDate DATE,
+    OrderTime TIME,
+    ShippedAt DATETIME
+);
+```
+
