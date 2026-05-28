@@ -1,4 +1,4 @@
-<img width="812" height="148" alt="image" src="https://github.com/user-attachments/assets/131adb68-ecc7-4d11-b385-2bfd93d92ac2" />## SQL CREATE TABLE 
+## SQL CREATE TABLE 
 The `CREATE TABLE` statement in SQL is used to define a new table in a database. It specifies the table structure including column names and their data types.
 - It is used to create a new table in a database.
 - It defines column names and their data types.
