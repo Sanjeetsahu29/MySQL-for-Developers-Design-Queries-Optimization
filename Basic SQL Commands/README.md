@@ -77,3 +77,21 @@ FROM customer;
 <img width="815" height="222" alt="image" src="https://github.com/user-attachments/assets/09d89624-eb7c-49fe-a75b-98ffb44ac50c" />
 ```Note: We can use * instead of column name to copy whole table to another table.```
 
+#### Tips for Using CREATE TABLE in SQL
+To ensure the smooth creation and management of your tables, keep these points in mind:
+
+1. The CREATE TABLE statement can also define constraints like NOT NULL, UNIQUE and DEFAULT.
+
+2. If you attempt to create a table that already exists, SQL will throw an error. To avoid this, you can use the IF NOT EXISTS clause.
+   ```
+    CREATE TABLE IF NOT EXISTS Customer (...);
+   ```
+4. Always define appropriate data types for each column (e.g., VARCHAR(50) for names and INT for IDs) to optimize performance and storage.
+5. After creating a table, use the following command to view the structure of your table:
+   ```
+   DESC table_name;
+   ```
+6. If you need to change the table’s structure after creation (e.g., renaming a column, adding a new column), use the ALTER TABLE statement.
+
+
+
