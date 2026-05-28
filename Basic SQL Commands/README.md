@@ -53,3 +53,27 @@ VALUES
 
 **Output:**
 <img width="823" height="183" alt="image" src="https://github.com/user-attachments/assets/a4232258-564a-4042-8182-d2e815e7f5f0" />
+
+### Create Table from Existing Table
+We can also create a new table based on the structure (and optionally the data) of an existing table. The CREATE TABLE AS SELECT command allows us to duplicate an entire table or select specific columns to form a new one. The following query creates a new table called SubTable that contains CustomerID and CustomerName from the existing Customer table.
+
+**Syntax:**
+```
+CREATE TABLE new_table_name AS
+SELECT column1, column2, ...
+FROM existing_table_name
+WHERE ...
+```
+
+In this example, we create a new table SubTable that contains just the CustomerID and CustomerName columns from the Customer table. This method is useful for creating backups or performing quick data migrations.
+```
+CREATE TABLE SubTable AS
+SELECT CustomerID, CustomerName
+FROM customer;
+```
+```Note: CREATE TABLE ... AS SELECT does NOT copy constraints, indexes or keys```
+
+**Output**
+<img width="815" height="222" alt="image" src="https://github.com/user-attachments/assets/09d89624-eb7c-49fe-a75b-98ffb44ac50c" />
+```Note: We can use * instead of column name to copy whole table to another table.```
+
