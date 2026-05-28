@@ -1,4 +1,4 @@
-## SQL CREATE TABLE 
+<img width="812" height="148" alt="image" src="https://github.com/user-attachments/assets/131adb68-ecc7-4d11-b385-2bfd93d92ac2" />## SQL CREATE TABLE 
 The `CREATE TABLE` statement in SQL is used to define a new table in a database. It specifies the table structure including column names and their data types.
 - It is used to create a new table in a database.
 - It defines column names and their data types.
@@ -94,4 +94,28 @@ To ensure the smooth creation and management of your tables, keep these points i
 6. If you need to change the table’s structure after creation (e.g., renaming a column, adding a new column), use the ALTER TABLE statement.
 
 
+----------------------------------------------------------------------------------------------
+## SQL ALTER TABLE
+The SQL ALTER TABLE statement is used to modify an existing table’s structure without deleting it. It helps update the design of a database as requirements change.
+Can add, delete or modify columns in a table.
+Can also rename a table or change data types and constraints.
+Useful for adjusting database structure without losing data.
 
+Example: First, we will create a demo SQL database and Employees table, on which we will use the ALTER TABLE command.
+<img width="813" height="145" alt="image" src="https://github.com/user-attachments/assets/dda14f80-31be-49fb-b571-f8b8d9d86d5b" />
+
+**Query:**
+```
+ALTER TABLE Employees RENAME TO Staff;
+```
+**Output**
+<img width="812" height="148" alt="image" src="https://github.com/user-attachments/assets/451b7898-1a88-40b9-8b79-0aa579284126" />
+
+#### SYNTAX 
+```
+  ALTER TABLE table_name [ADD | DROP | MODIFY] column_name datatype;
+```
+- **table_name**: name of the table you want to modify.
+- **ADD**: used to add a new column.
+- **DROP**: used to remove an existing column.
+- **MODIFY**: used to change datatype or definition of an existing column.
