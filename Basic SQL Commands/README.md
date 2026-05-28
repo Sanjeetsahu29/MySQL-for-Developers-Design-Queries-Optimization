@@ -119,3 +119,37 @@ ALTER TABLE Employees RENAME TO Staff;
 - **ADD**: used to add a new column.
 - **DROP**: used to remove an existing column.
 - **MODIFY**: used to change datatype or definition of an existing column.
+
+### Use Cases for SQL ALTER TABLE
+1. ADD
+The ADD clause is used to add a new column to an existing table. You must specify the name of the new column and its data type.
+
+**Syntax**
+```
+  ALTER TABLE table_name
+  ADD column_name datatype;
+```
+**Query:**
+```
+ALTER TABLE Staff
+ADD Email VARCHAR(100);
+```
+
+**Output**
+<img width="819" height="157" alt="image" src="https://github.com/user-attachments/assets/ecd43088-cd89-4b6a-b95d-0c838ac9f5c0" />
+
+2. MODIFY
+The MODIFY (or ALTER COLUMN in some databases like SQL Server) clause is used to modify the definition of an existing column, such as changing its data type or size.
+
+**Syntax:**
+```
+  ALTER TABLE table_name
+  MODIFY COLUMN column_name datatype;
+```
+**Query:**
+```
+  ALTER TABLE Staff
+  MODIFY COLUMN Address VARCHAR(100);
+```
+Here, we are modifying the column named Address datatype that is VARCHAR(100).
+
